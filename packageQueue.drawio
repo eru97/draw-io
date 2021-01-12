@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-12T02:09:35.579Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="1mIBlEH1HwYAHw__Yl4Q" version="14.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-12T02:10:56.477Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="sHNzCZ4YAF2gSZoVMxRf" version="14.1.9" type="github">
   <diagram id="WXttNHrkhx1nnGVsF4Nc" name="Page-1">
     <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,7 +52,7 @@
         <mxCell id="oTEjtu3qGeO5vsxfW3SU-3" value="Thread" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="345" y="700" width="70" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="oTEjtu3qGeO5vsxfW3SU-9" value="Success" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+        <mxCell id="oTEjtu3qGeO5vsxfW3SU-9" value="Success" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="1">
           <mxGeometry x="560" y="540" width="60" height="50" as="geometry" />
         </mxCell>
         <mxCell id="oTEjtu3qGeO5vsxfW3SU-11" value="Fail" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
@@ -79,10 +79,10 @@
             <mxPoint x="570" y="645" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oTEjtu3qGeO5vsxfW3SU-17" value="Waiting" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+        <mxCell id="oTEjtu3qGeO5vsxfW3SU-17" value="Waiting" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="490" y="385" width="60" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="oTEjtu3qGeO5vsxfW3SU-18" value="packaging" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+        <mxCell id="oTEjtu3qGeO5vsxfW3SU-18" value="Packaging" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="1">
           <mxGeometry x="350" y="550" width="60" height="50" as="geometry" />
         </mxCell>
       </root>
