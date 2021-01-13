@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-13T08:38:23.107Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="UpHUDheA8oiUFU0Od4HH" version="14.1.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-01-13T08:49:43.738Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="Dk64BmeaekY3YmsXzAFo" version="14.1.9" type="github" pages="2">
   <diagram id="_S8czTXeEUZWKj36Bfly" name="事件流设计器">
     <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -108,14 +108,11 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="fpslSjxJwfygLwMFZUTM" name="事件引擎">
+  <diagram id="muo8QHdYfpq-5nY31HoK" name="事件引擎">
     <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="l32ThpBfVRbTJkDsjD0i-0" />
-        <mxCell id="l32ThpBfVRbTJkDsjD0i-1" parent="l32ThpBfVRbTJkDsjD0i-0" />
-        <mxCell id="WpWv8r_B7LJ88uZRWdD7-0" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="l32ThpBfVRbTJkDsjD0i-1">
-          <mxGeometry x="390" y="180" width="810" height="550" as="geometry" />
-        </mxCell>
+        <mxCell id="VUxkTAln7aTZIGjGBF91-0" />
+        <mxCell id="VUxkTAln7aTZIGjGBF91-1" parent="VUxkTAln7aTZIGjGBF91-0" />
       </root>
     </mxGraphModel>
   </diagram>
