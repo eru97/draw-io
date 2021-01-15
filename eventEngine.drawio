@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-15T07:36:53.088Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="YXzxa_BxQi0GsJkJduny" version="14.2.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-01-15T13:03:14.405Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="6tfq30ntNk1s0icTTuWl" version="14.2.3" type="github" pages="3">
   <diagram id="_S8czTXeEUZWKj36Bfly" name="事件流设计器">
     <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -512,6 +512,68 @@
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="c9mz_gXquLrzHR-y8QYD" name="飞搭预置事件流">
+    <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-0" />
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-1" parent="ZbPwr5iv5gjtxISUaOaI-0" />
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-3" value="新增" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="30" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-4" value="单条删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="660" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-5" value="详情查询" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="500" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-6" value="保存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="340" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-7" value="分页查询" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="190" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-8" value="多行删除" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="30" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-9" value="飞搭页面跳转" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="660" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-10" value="打开新标签页" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="500" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-11" value="保存并打开" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="340" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-12" value="保存并跳转飞搭页面" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="190" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-13" value="导出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="30" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-14" value="页面弹窗保存并关闭" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="660" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-15" value="页面弹窗关闭" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="500" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-16" value="页面弹窗" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="340" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-17" value="Hzero页面跳转" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="190" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-18" value="不分页查询" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="30" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-22" value="导入" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="190" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZbPwr5iv5gjtxISUaOaI-23" value="&lt;font style=&quot;font-size: 16px&quot;&gt;飞搭内置事件流，可满足常规的业务开发&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="ZbPwr5iv5gjtxISUaOaI-1">
+          <mxGeometry x="360" y="480" width="300" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
