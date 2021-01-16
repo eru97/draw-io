@@ -1,1 +1,53 @@
-<mxfile host="app.diagrams.net" modified="2021-01-16T03:28:51.948Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" version="14.2.4" etag="5Ei8TbrJiUyXRVsSZcg-" type="github"><diagram id="pBQXpUCzEol7Mb9YvPG3">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-16T04:22:19.784Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="C6GHPQy4Y21y3WKfeSpW" version="14.2.4" type="github">
+  <diagram id="pBQXpUCzEol7Mb9YvPG3" name="Page-1">
+    <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-2" value="第三方业务系统" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-4" value="海马汇" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="470" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="535" y="320" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-10" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" target="y-q2Y88FyBSHfw3vN6kP-9" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="323" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-11" value="返回二维码信息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" source="y-q2Y88FyBSHfw3vN6kP-9" parent="1" target="y-q2Y88FyBSHfw3vN6kP-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="354" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="310" y="290" width="10" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-13" value="s c" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="300" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-14" value="用户" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="115" y="280" width="10" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-17" value="点扫码登录" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.043;exitX=1;exitY=0.01;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="y-q2Y88FyBSHfw3vN6kP-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="293" as="sourcePoint" />
+            <mxPoint x="335" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y-q2Y88FyBSHfw3vN6kP-18" value="返回二维码信息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="440" as="targetPoint" />
+            <mxPoint x="310" y="440" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
