@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2021-01-15T08:06:02.495Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="qa9sBjvPobFhUlEn5cNG" version="14.2.2" type="github">
-  <diagram id="WXttNHrkhx1nnGVsF4Nc" name="Page-1">
+<mxfile host="app.diagrams.net" modified="2021-06-19T09:44:56.127Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="prmYo6l-WdL7_NwcZXmM" version="14.7.6" type="github" pages="2">
+  <diagram id="WXttNHrkhx1nnGVsF4Nc" name="打包线程池设计">
     <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -82,11 +82,67 @@
         <mxCell id="oTEjtu3qGeO5vsxfW3SU-18" value="Packaging" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#9673a6;fillColor=#e1d5e7;" parent="1" vertex="1">
           <mxGeometry x="350" y="550" width="60" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="-lydWnswOdqcU-i7Ikff-1" value="InFail" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+        <mxCell id="-lydWnswOdqcU-i7Ikff-1" value="InFail" style="ellipse;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeColor=#b85450;fillColor=#f8cecc;" parent="1" vertex="1">
           <mxGeometry x="710" y="385" width="60" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="-lydWnswOdqcU-i7Ikff-2" value="打包线程池设计" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="-lydWnswOdqcU-i7Ikff-2" value="打包线程池设计" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="324" y="270" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mF2noojtXpy6e29aM6rl" name="推送限流器设计">
+    <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-0" />
+        <mxCell id="noBW3BPJyGOrNGgZPATn-1" parent="noBW3BPJyGOrNGgZPATn-0" />
+        <mxCell id="noBW3BPJyGOrNGgZPATn-2" value="极光推送" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="90" y="170" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-5" value="小米（手机厂商）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="90" y="230" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-6" value="谷歌推送" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="90" y="290" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-9" value="推送平台" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="115" y="130" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-10" value="推送注册器" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="320" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-11" value="IM注册中心" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="320" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-12" value="极光" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="540" y="200" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-13" value="网易云信" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="540" y="270" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-14" value="iM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="580" y="150" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-16" value="redis" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="370" y="400" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-17" value="hips:push:paltform:roungCloud" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="180" y="460" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-18" value="hips:push:paltform:google" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="195" y="510" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-19" value="{&quot;ts&quot;:&quot;1624095116731&quot;,&quot;tokens&quot;:&quot;200&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="410" y="460" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-20" value="{&quot;ts&quot;:&quot;1624095116731&quot;,&quot;tokens&quot;:&quot;200&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="410" y="510" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-22" value="公司系统10,000人，需要同时发起10次推送。首先进行消息分组，以平台纬度拆分任务，&lt;br&gt;每个任务包含任务所属平台，推送人的userIds集合，发送消息的MSGID，将拆好的任务提交给推送线程池" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="120" y="625" width="570" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="noBW3BPJyGOrNGgZPATn-23" value="demo：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="300" y="590" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
