@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-19T10:10:19.265Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="REPMQH6XEI_LvjcmbGUK" version="14.7.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-06-20T07:25:19.830Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="27Ena40AiQZqF77fr1RJ" version="14.7.6" type="github" pages="3">
   <diagram id="WXttNHrkhx1nnGVsF4Nc" name="打包线程池设计">
     <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -123,44 +123,76 @@
         <mxCell id="noBW3BPJyGOrNGgZPATn-14" value="iM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
           <mxGeometry x="490" y="140" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-16" value="redis" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="394" y="370" width="40" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-17" value="hips:push:paltform:roungCloud" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="90" y="460" width="180" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-18" value="hips:push:paltform:google" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="100" y="510" width="150" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-19" value="{&quot;ts&quot;:&quot;1624095116731&quot;,&quot;tokens&quot;:&quot;200&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="335" y="460" width="220" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-20" value="{&quot;ts&quot;:&quot;1624095116731&quot;,&quot;tokens&quot;:&quot;200&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="335" y="510" width="220" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="noBW3BPJyGOrNGgZPATn-22" value="公司系统10,000人，需要向全公司同事发起一次推送。首先进行消息分组，以平台纬度拆分任务，&lt;br&gt;每个任务包含任务所属平台，推送人的userIds集合，发送消息的MSGID，将拆好的任务提交给推送线程池" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="120" y="625" width="570" height="30" as="geometry" />
+          <mxGeometry x="115" y="680" width="570" height="30" as="geometry" />
         </mxCell>
         <mxCell id="noBW3BPJyGOrNGgZPATn-23" value="case：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="305" y="590" width="50" height="20" as="geometry" />
+          <mxGeometry x="144" y="640" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="noBW3BPJyGOrNGgZPATn-24" value="推送线程的执行逻辑，" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="160" y="700" width="140" height="20" as="geometry" />
+          <mxGeometry x="129" y="740" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="noBW3BPJyGOrNGgZPATn-25" value="并发控制：当同时发起多次次推送任务。存在多个线程同时去更新一个推送平台令牌，在更新令牌和更新时间戳时必须先持有redissonLock，&lt;br&gt;当拿不到锁的线程会被阻塞，执行推送任务的线程只有完成了所有的推送任务后才会释放锁。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="65" y="735" width="760" height="30" as="geometry" />
+          <mxGeometry x="49" y="800" width="760" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-26" value="2*填充完桶的时间" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="630" y="480" width="110" height="20" as="geometry" />
+        <mxCell id="3O3rerTZ8kzo9Is-pePC-2" value="配置中心&lt;br&gt;需配置每个平台的推送频率" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="610" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-27" value="ex" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="650" y="430" width="30" height="20" as="geometry" />
+        <mxCell id="3O3rerTZ8kzo9Is-pePC-5" value="ElasticSearch" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
+          <mxGeometry x="189" y="355" width="80" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-28" value="key" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="155" y="430" width="30" height="20" as="geometry" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="s3y1FwjERJmsMM4eQ8Iq" name="RateLimt">
+    <mxGraphModel dx="1426" dy="946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="PTnzoFIO5QJtyRfJcHKJ-0" />
+        <mxCell id="PTnzoFIO5QJtyRfJcHKJ-1" parent="PTnzoFIO5QJtyRfJcHKJ-0" />
+        <mxCell id="PTnzoFIO5QJtyRfJcHKJ-2" value="RateLimit&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="330" y="100" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="noBW3BPJyGOrNGgZPATn-29" value="value" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="noBW3BPJyGOrNGgZPATn-1">
-          <mxGeometry x="410" y="430" width="40" height="20" as="geometry" />
+        <mxCell id="PTnzoFIO5QJtyRfJcHKJ-3" value="LocalRateLimit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="210" y="180" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PTnzoFIO5QJtyRfJcHKJ-4" value="RedisRateLimit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="440" y="180" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-0" value="redis" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="364" y="320" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-1" value="hips:push:paltform:roungCloud" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="60" y="410" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-2" value="hips:push:paltform:google" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="70" y="460" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-3" value="{&quot;ts&quot;:&quot;1624095116731&quot;,&quot;tokens&quot;:&quot;200&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="305" y="410" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-4" value="{&quot;ts&quot;:&quot;1624095116731&quot;,&quot;tokens&quot;:&quot;200&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="305" y="460" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-5" value="2*填充完桶的时间" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="600" y="430" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-6" value="ex" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="620" y="380" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-7" value="key" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="125" y="380" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-8" value="value" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="380" y="380" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-9" value="luna脚本" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="330" y="530" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-10" value="1.传入参数key[0]=推送平台的唯一性标识，args[0]=令牌桶的填充速率，args[1]=桶容量，args[2]=当前时间戳， args[3]=请求token数量" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="60" y="585" width="730" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QLafy59QiIdwgcj-e4JT-11" value="1.传入参数key[0]=推送平台的唯一性标识，args[0]=令牌桶的填充速率，args[1]=桶容量，args[2]=当前时间戳， args[3]=请求token数量" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="PTnzoFIO5QJtyRfJcHKJ-1">
+          <mxGeometry x="60" y="630" width="730" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
